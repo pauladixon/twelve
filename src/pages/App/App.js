@@ -15,7 +15,7 @@ class App extends React.Component {
     for (let i = 0; i < num*2; i++) {
       let angle = startAngle + (i * arc)
       if (i%2 === 0) {
-          ctx.fillStyle = '#f0f0f0'
+          ctx.fillStyle = '#f0eddc'
       } else ctx.fillStyle = '#f0eadc'
       ctx.beginPath()
       ctx.arc(r, r, r, angle, angle + arc, false)
