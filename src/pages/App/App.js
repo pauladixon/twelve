@@ -52,7 +52,7 @@ class App extends React.Component {
         <p>12</p>
         <div class="container">
           <div class="sphere">
-            <canvas id="canvas" width="450px" height="450px"></canvas>
+            <canvas id="canvas" width="500px" height="500px"></canvas>
           </div>
         </div>
       </div>
