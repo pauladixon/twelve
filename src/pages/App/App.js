@@ -4,12 +4,12 @@ import './App.css'
 class App extends React.Component {
 
   async componentDidMount() {
-    const numbers = [6, 5, 4, 3, 2, 1, 12, 11, 10, 9, 8, 7];
+    const numbers = [6, 5, 4, 3, 2, 1, 12, 11, 10, 9, 8, 7]
 
-    let startAngle = 0;
-    let arc = Math.PI / 6;
-    let ctx;
-    let numRadius = 200;
+    let startAngle = 0
+    let arc = Math.PI / 6
+    let ctx
+    let numRadius = 200
 
     let canvas = document.getElementById("canvas");
 
