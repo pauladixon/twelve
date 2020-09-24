@@ -39,7 +39,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <p>12</p>
+        <div className='header'>12</div>
         <div class="container">
           <div class="sphere">
             <canvas id="canvas" width="500px" height="500px"></canvas>
