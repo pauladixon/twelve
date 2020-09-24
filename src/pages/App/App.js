@@ -12,6 +12,7 @@ class App extends React.Component {
     let ctx
     let canvas = document.getElementById('canvas')
     ctx = canvas.getContext('2d')
+    ctx.font = '22px "Orator Std", Arial'
 
     for (let i = 0; i < num*2; i++) {
       let angle = startAngle + (i * arc)
@@ -23,6 +24,12 @@ class App extends React.Component {
       ctx.arc(r, r, 0, angle + arc, angle, true)
       ctx.fill()
       ctx.save()
+      ctx.fillStyle = "#dae0e8";
+        ctx.translate(250 + Math.cos(angle + arc / 2) * numRadius,
+            250 + Math.sin(angle + arc / 2) * numRadius)
+        ctx.rotate(angle + arc / 2 + Math.PI / 2)
+        let number = numbers[i]
+        ctx.fillText(number, -ctx.measureText(number).width / 2, 0)
       ctx.restore()
     }
   }
