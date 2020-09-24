@@ -14,13 +14,11 @@ class App extends React.Component {
     let canvas = document.getElementById("canvas")
 
     ctx = canvas.getContext('2d')
-    ctx.font = '22px "Orator Std", Arial'
+    ctx.font = '22px "monotype'
 
     for(let i = 0; i < 12; i++) {
       let angle = startAngle + (i * arc)
-      if (i%2 === 0){
-          ctx.fillStyle = "#fffff0"
-      } else ctx.fillStyle = "#bb9990"
+      ctx.fillStyle = "#bb9990"
       ctx.beginPath()
       ctx.arc(250, 250, 250, angle, angle + arc, false)
       ctx.arc(250, 250, 0, angle + arc, angle, true)

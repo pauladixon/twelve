@@ -8,7 +8,9 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  font-family: monotype;
+  margin-top: 20px;
+  margin-bottom: -30px;
 }
 .container {
   display: flex;
