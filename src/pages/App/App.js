@@ -4,14 +4,12 @@ import './App.css'
 class App extends React.Component {
 
   async componentDidMount() {
-    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+    const numbers = [6, 5, 4, 3, 2, 1, 12, 11, 10, 9, 8, 7];
 
     let startAngle = 0;
     let arc = Math.PI / 6;
     let ctx;
-    let outerRadius = 250;
     let numRadius = 200;
-    let innerRadius = 0;
 
     let canvas = document.getElementById("canvas");
 
@@ -24,8 +22,8 @@ class App extends React.Component {
           ctx.fillStyle = "#fffff0";
       } else ctx.fillStyle = "#bb9990";
       ctx.beginPath();
-      ctx.arc(250, 250, outerRadius, angle, angle + arc, false);
-      ctx.arc(250, 250, innerRadius, angle + arc, angle, true);
+      ctx.arc(250, 250, 250, angle, angle + arc, false);
+      ctx.arc(250, 250, 0, angle + arc, angle, true);
       ctx.fill();
       ctx.save();
       ctx.fillStyle = "#dae0e8";
