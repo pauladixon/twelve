@@ -3,13 +3,13 @@ html {
 }
 
 .header {
-  color: magenta;
+  color: chartreuse;
   font-size: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-top: 20px;
+  font-family: Helvetica;
+  margin-top: 50px;
   margin-bottom: -30px;
 }
 .container {
