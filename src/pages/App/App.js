@@ -14,7 +14,7 @@ class App extends React.Component {
     let canvas = document.getElementById("canvas")
 
     ctx = canvas.getContext('2d')
-    ctx.font = '21px "monotype'
+    ctx.font = "21px 'Franklin Gothic Medium'"
 
     for(let i = 0; i < 12; i++) {
       let angle = startAngle + (i * arc)

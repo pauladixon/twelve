@@ -3,12 +3,12 @@ html {
 }
 
 .header {
-  color: white;
+  color: magenta;
   font-size: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: monotype;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-top: 20px;
   margin-bottom: -30px;
 }
