@@ -21,13 +21,13 @@ class App extends React.Component {
 
     for(let i = 0; i < 12; i++) {
       let angle = startAngle + (i * arc)
-      ctx.fillStyle = "#bb9990"
+      ctx.fillStyle = "rgba(445, 255, 255, .25)"
       ctx.beginPath()
       ctx.arc(250, 250, 250, angle, angle + arc, false)
       ctx.arc(250, 250, 0, angle + arc, angle, true)
       ctx.fill()
       ctx.save()
-      ctx.fillStyle = "rgba(255, 255, 255, .25)"
+      ctx.fillStyle = "rgba(255, 255, 255)"
       ctx.translate(250 + Math.cos(angle + arc / 2) * numRadius,
           250 + Math.sin(angle + arc / 2) * numRadius)
       ctx.rotate(angle + arc / 2 + Math.PI / 2)
@@ -40,16 +40,24 @@ class App extends React.Component {
   render() {
 
     var data = [
-      {x:150,y:650,r:40,attr:{"stroke":"#fff0f0","stroke-width":100},animate:Raphael.animation({cx:300},1000,"<>")},
-      {x:600,y:200,r:40,attr:{"stroke":"#f0fff0","stroke-width":100},animate:Raphael.animation({cx:200},1000,"<>")},
-      {x:1350,y:650,r:40,attr:{"stroke":"#f0f0ff","stroke-width":100},animate:Raphael.animation({cx:800},1000,"<>")},
-      {x:400,y:100,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:700},1000,"<>")},
-      {x:250,y:550,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:100},1000,"<>")}
+      {x:150,y:100,r:40,attr:{"stroke":"rgba(255, 255, 255, .15)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
+      {x:600,y:300,r:60,attr:{"stroke":"rgba(255, 255, 255, .65)","stroke-width":150},animate:Raphael.animation({cx:200},6000,"<>")},
+      {x:1350,y:650,r:30,attr:{"stroke":"rgba(255, 255, 255, .45)","stroke-width":100},animate:Raphael.animation({cx:800},9000,"<>")},
+      {x:300,y:500,r:50,attr:{"stroke":"rgba(255, 255, 255, .25)","stroke-width":100},animate:Raphael.animation({cx:700},2000,"<>")},
+      {x:250,y:650,r:70,attr:{"stroke":"rgba(255, 255, 255, .35)","stroke-width":150},animate:Raphael.animation({cx:600},6000,"<>")},
+      {x:150,y:650,r:30,attr:{"stroke":"rgba(255, 255, 255, .15)","stroke-width":100},animate:Raphael.animation({cx:700},7000,"<>")},
+      {x:600,y:200,r:10,attr:{"stroke":"rgba(255, 255, 255, .65)","stroke-width":100},animate:Raphael.animation({cx:700},3000,"<>")},
+      {x:750,y:450,r:90,attr:{"stroke":"rgba(255, 255, 255, .45)","stroke-width":190},animate:Raphael.animation({cx:300},10000,"<>")},
+      {x:400,y:200,r:30,attr:{"stroke":"rgba(255, 255, 255, .25)","stroke-width":100},animate:Raphael.animation({cx:400},4000,"<>")},
+      {x:150,y:550,r:80,attr:{"stroke":"rgba(255, 255, 255, .35)","stroke-width":170},animate:Raphael.animation({cx:200},1000,"<>")},
+      {x:150,y:100,r:20,attr:{"stroke":"rgba(255, 255, 255, .15)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
+      {x:630,y:300,r:10,attr:{"stroke":"rgba(255, 255, 255, .65)","stroke-width":150},animate:Raphael.animation({cx:200},6000,"<>")},
+      {x:1350,y:150,r:40,attr:{"stroke":"rgba(255, 255, 255, .45)","stroke-width":150},animate:Raphael.animation({cx:800},7000,"<>")},
     ]
 
     return (
       <div className="app">
-        <div className='header'>12</div>
+        <div className='header'>⑫</div>
         <div className="container">
           <div className="sphere">
             <canvas id="canvas" width="500px" height="500px"></canvas>
@@ -57,8 +65,8 @@ class App extends React.Component {
         </div>
         <Paper
           className='circles'
-          width={900} 
-          height={900}
+          width={1000} 
+          height={1000}
         >
           <Set>    
             { data.map(function(ele,pos){
