@@ -27,7 +27,7 @@ class App extends React.Component {
       ctx.arc(250, 250, 0, angle + arc, angle, true)
       ctx.fill()
       ctx.save()
-      ctx.fillStyle = "#f0f0f0"
+      ctx.fillStyle = "rgba(255, 255, 255, .25)"
       ctx.translate(250 + Math.cos(angle + arc / 2) * numRadius,
           250 + Math.sin(angle + arc / 2) * numRadius)
       ctx.rotate(angle + arc / 2 + Math.PI / 2)
@@ -40,11 +40,11 @@ class App extends React.Component {
   render() {
 
     var data = [
-      {x:150,y:450,r:40,attr:{"stroke":"#fff0f0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
-      {x:600,y:200,r:40,attr:{"stroke":"#f0fff0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
-      {x:1350,y:650,r:40,attr:{"stroke":"#f0f0ff","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
-      {x:400,y:100,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
-      {x:250,y:550,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")}
+      {x:150,y:650,r:40,attr:{"stroke":"#fff0f0","stroke-width":100},animate:Raphael.animation({cx:300},1000,"<>")},
+      {x:600,y:200,r:40,attr:{"stroke":"#f0fff0","stroke-width":100},animate:Raphael.animation({cx:200},1000,"<>")},
+      {x:1350,y:650,r:40,attr:{"stroke":"#f0f0ff","stroke-width":100},animate:Raphael.animation({cx:800},1000,"<>")},
+      {x:400,y:100,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:700},1000,"<>")},
+      {x:250,y:550,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:100},1000,"<>")}
     ]
 
     return (
@@ -57,8 +57,8 @@ class App extends React.Component {
         </div>
         <Paper
           className='circles'
-          width={1000} 
-          height={1000}
+          width={900} 
+          height={900}
         >
           <Set>    
             { data.map(function(ele,pos){

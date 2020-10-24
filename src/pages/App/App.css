@@ -29,8 +29,8 @@ html {
   justify-content: center;
   font-family: Helvetica;
   margin-top: 50px;
-  margin-bottom: -30px;
   width: 100vw;
+  z-index: 100;
 }
 
 .container {
@@ -38,19 +38,20 @@ html {
   justify-content: center;
   align-items: center;
   position: absolute;
+  z-index: 100;
 }
 
 .circles {
   width: 1000;
   height: 1000;
-  position: absolute;
+  z-index: -100;
 }
 
 .sphere {
   width: 450px;
   height: 450px;
   position: relative;
-  margin: 150px 0px 150px 0px;
+  margin: 0px 0px 150px 0px;
 }
 
 #canvas {
