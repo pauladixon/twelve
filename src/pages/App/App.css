@@ -23,13 +23,13 @@ html {
 
 .header {
   color: #ae5a41;
-  font-size: 64px;
+  font-size: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Helvetica;
   margin-top: 50px;
-  margin-bottom: -30px;
+  margin-bottom: -20px;
   width: 100vw;
   z-index: 100;
 }
