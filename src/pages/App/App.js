@@ -1,5 +1,9 @@
 import React from 'react'
+import ReactDOM = require('react-dom')
 import './App.css'
+
+const {Raphael,Paper,Set,Circle,Ellipse,Image,Rect,Text,Path,Line} = require('react-raphael');
+ 
 
 class App extends React.Component {
 
