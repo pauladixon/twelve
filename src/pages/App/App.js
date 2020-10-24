@@ -7,7 +7,7 @@ const {Raphael,Paper,Set,Circle,Ellipse,Image,Rect,Text,Path,Line} = require('re
 class App extends React.Component {
 
   async componentDidMount() {
-    const numbers = ['⑥', '⑤', '④', '③', '②', '①', '⑫', '⑪', '⑩', '⑨', '⑧', '⑦']
+    const numbers = ['6', '5', '4', '3', '2', '1', '12', '11', '10', '9', '8', '7']
 
     let startAngle = 0
     let arc = Math.PI / 6
