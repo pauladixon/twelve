@@ -39,6 +39,15 @@ class App extends React.Component {
   }
 
   render() {
+
+    var data = [
+      {x:50,y:50,r:40,attr:{"stroke":"#0b8ac9","stroke-width":5},animate:Raphael.animation({cx:60},500,"<>")},
+      {x:100,y:100,r:40,attr:{"stroke":"#f0c620","stroke-width":5},animate:Raphael.animation({cx:105},500,"<>")},
+      {x:150,y:50,r:40,attr:{"stroke":"#1a1a1a","stroke-width":5}},
+      {x:200,y:100,r:40,attr:{"stroke":"#10a54a","stroke-width":5},animate:Raphael.animation({cx:195},500,"<>")},
+      {x:250,y:50,r:40,attr:{"stroke":"#e11032","stroke-width":5},animate:Raphael.animation({cx:240},500,"<>")}
+    ]
+
     return (
       <div className="App">
         <div className='header'>12</div>
