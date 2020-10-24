@@ -14,6 +14,13 @@ html {
   }
 }
 
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 .header {
   color: whitesmoke;
   font-size: 44px;
@@ -23,18 +30,20 @@ html {
   font-family: Helvetica;
   margin-top: 50px;
   margin-bottom: -30px;
+  width: 100vw;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
 }
 
 .circles {
-  position: fixed;
   width: 1000;
   height: 1000;
+  position: absolute;
 }
 
 .sphere {

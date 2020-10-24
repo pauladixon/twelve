@@ -40,15 +40,15 @@ class App extends React.Component {
   render() {
 
     var data = [
-      {x:150,y:450,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:160},500,"<>")},
-      {x:600,y:200,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:205},500,"<>")},
-      {x:1350,y:650,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:205},500,"<>")},
-      {x:400,y:100,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:295},500,"<>")},
-      {x:250,y:550,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:440},500,"<>")}
+      {x:150,y:450,r:40,attr:{"stroke":"#fff0f0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
+      {x:600,y:200,r:40,attr:{"stroke":"#f0fff0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
+      {x:1350,y:650,r:40,attr:{"stroke":"#f0f0ff","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
+      {x:400,y:100,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")},
+      {x:250,y:550,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:500},1000,"<>")}
     ]
 
     return (
-      <div className="App">
+      <div className="app">
         <div className='header'>12</div>
         <div className="container">
           <div className="sphere">
