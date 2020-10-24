@@ -22,13 +22,14 @@ html {
 }
 
 .header {
-  color: whitesmoke;
-  font-size: 44px;
+  color: #ae5a41;
+  font-size: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: Helvetica;
   margin-top: 50px;
+  margin-bottom: -30px;
   width: 100vw;
   z-index: 100;
 }
