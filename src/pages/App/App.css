@@ -28,7 +28,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
+}
+
+.circles {
+  position: fixed;
+  width: 1000;
+  height: 1000;
 }
 
 .sphere {

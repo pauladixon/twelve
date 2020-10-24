@@ -40,22 +40,26 @@ class App extends React.Component {
   render() {
 
     var data = [
-      {x:50,y:250,r:40,attr:{"stroke":"#0b8ac9","stroke-width":100},animate:Raphael.animation({cx:60},500,"<>")},
-      {x:100,y:300,r:40,attr:{"stroke":"#f0c620","stroke-width":100},animate:Raphael.animation({cx:105},500,"<>")},
-      {x:150,y:250,r:40,attr:{"stroke":"#1a1a1a","stroke-width":100}},
-      {x:200,y:300,r:40,attr:{"stroke":"#10a54a","stroke-width":100},animate:Raphael.animation({cx:195},500,"<>")},
-      {x:250,y:250,r:40,attr:{"stroke":"#e11032","stroke-width":100},animate:Raphael.animation({cx:240},500,"<>")}
+      {x:150,y:450,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:160},500,"<>")},
+      {x:600,y:200,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:205},500,"<>")},
+      {x:1350,y:650,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:205},500,"<>")},
+      {x:400,y:100,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:295},500,"<>")},
+      {x:250,y:550,r:40,attr:{"stroke":"#f0f0f0","stroke-width":100},animate:Raphael.animation({cx:440},500,"<>")}
     ]
 
     return (
       <div className="App">
         <div className='header'>12</div>
-        <div class="container">
-          <div class="sphere">
+        <div className="container">
+          <div className="sphere">
             <canvas id="canvas" width="500px" height="500px"></canvas>
           </div>
         </div>
-        <Paper width={1000} height={1000}>
+        <Paper
+          className='circles'
+          width={1000} 
+          height={1000}
+        >
           <Set>    
             { data.map(function(ele,pos){
                 return (<Circle key={pos} x={ele.x} y={ele.y} r={ele.r} attr={ele.attr} animate={ele.animate}/>)
