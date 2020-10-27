@@ -27,7 +27,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Arial;
+  font-family: monospace;
   margin-top: 150px;
   margin-bottom: -100px;
   width: 100vw;
