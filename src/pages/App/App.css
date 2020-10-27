@@ -42,12 +42,6 @@ html {
   z-index: 100;
 }
 
-.circles {
-  width: 1000;
-  height: 1000;
-  z-index: -100;
-}
-
 .sphere {
   width: 450px;
   height: 450px;
