@@ -17,17 +17,17 @@ class App extends React.Component {
     let canvas = document.getElementById("canvas")
 
     ctx = canvas.getContext('2d')
-    ctx.font = '20px "Orator STD"'
+    ctx.font = '20px "Arial"'
 
     for(let i = 0; i < 12; i++) {
       let angle = startAngle + (i * arc)
-      ctx.fillStyle = "rgba(0, 250, 250, .35)"
+      ctx.fillStyle = "rgba(0, 250, 250, .55)"
       ctx.beginPath()
       ctx.arc(250, 250, 250, angle, angle + arc, false)
       ctx.arc(250, 250, 0, angle + arc, angle, true)
       ctx.fill()
       ctx.save()
-      ctx.fillStyle = "#ae5a41"
+      ctx.fillStyle = "rgba(0, 250, 250, .85)"
       ctx.translate(250 + Math.cos(angle + arc / 2) * numRadius,
           250 + Math.sin(angle + arc / 2) * numRadius)
       ctx.rotate(angle + arc / 2 + Math.PI / 2)
