@@ -57,7 +57,7 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        <div className='header'>⑫</div>
+        <div className='header'>twelve</div>
         <div className="container">
           <div className="sphere">
             <canvas id="canvas" width="500px" height="500px"></canvas>
