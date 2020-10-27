@@ -40,18 +40,18 @@ class App extends React.Component {
   render() {
 
     var data = [
-      {x:150,y:100,r:40,attr:{"stroke":"rgba(0, 0, 0, .15)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
-      {x:600,y:300,r:60,attr:{"stroke":"rgba(255, 255, 255, .65)","stroke-width":150},animate:Raphael.animation({cx:200},6000,"<>")},
-      {x:1350,y:650,r:30,attr:{"stroke":"rgba(255, 255, 255, .45)","stroke-width":100},animate:Raphael.animation({cx:800},9000,"<>")},
+      {x:150,y:100,r:40,attr:{"stroke":"rgba(250, 0, 250, .15)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
+      {x:600,y:300,r:60,attr:{"stroke":"rgba(5, 5, 255, .65)","stroke-width":150},animate:Raphael.animation({cx:200},6000,"<>")},
+      {x:1350,y:650,r:30,attr:{"stroke":"rgba(255, 5, 255, .45)","stroke-width":100},animate:Raphael.animation({cx:800},9000,"<>")},
       {x:300,y:500,r:50,attr:{"stroke":"rgba(250, 0, 255, .25)","stroke-width":100},animate:Raphael.animation({cx:700},2000,"<>")},
-      {x:250,y:650,r:70,attr:{"stroke":"rgba(255, 255, 255, .35)","stroke-width":150},animate:Raphael.animation({cx:600},6000,"<>")},
+      {x:250,y:650,r:70,attr:{"stroke":"rgba(5, 205, 55, .35)","stroke-width":150},animate:Raphael.animation({cx:600},6000,"<>")},
       {x:150,y:650,r:30,attr:{"stroke":"rgba(255, 255, 0, .15)","stroke-width":100},animate:Raphael.animation({cx:700},7000,"<>")},
-      {x:600,y:200,r:10,attr:{"stroke":"rgba(255, 255, 255, .65)","stroke-width":100},animate:Raphael.animation({cx:700},3000,"<>")},
+      {x:600,y:200,r:10,attr:{"stroke":"rgba(25, 55, 255, .65)","stroke-width":100},animate:Raphael.animation({cx:700},3000,"<>")},
       {x:750,y:450,r:90,attr:{"stroke":"rgba(255, 0, 255, .45)","stroke-width":190},animate:Raphael.animation({cx:300},10000,"<>")},
-      {x:400,y:200,r:30,attr:{"stroke":"rgba(255, 255, 255, .25)","stroke-width":100},animate:Raphael.animation({cx:400},4000,"<>")},
+      {x:400,y:200,r:30,attr:{"stroke":"rgba(255, 255, 5, .25)","stroke-width":100},animate:Raphael.animation({cx:400},4000,"<>")},
       {x:150,y:550,r:80,attr:{"stroke":"rgba(5, 0, 255, .35)","stroke-width":170},animate:Raphael.animation({cx:200},1000,"<>")},
-      {x:150,y:100,r:20,attr:{"stroke":"rgba(255, 255, 5, .15)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
-      {x:630,y:300,r:10,attr:{"stroke":"rgba(255, 255, 255, .65)","stroke-width":150},animate:Raphael.animation({cx:200},6000,"<>")},
+      {x:150,y:100,r:20,attr:{"stroke":"rgba(255, 255, 5, .35)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
+      {x:630,y:300,r:10,attr:{"stroke":"rgba(205, 105, 5, .65)","stroke-width":150},animate:Raphael.animation({cx:200},6000,"<>")},
       {x:1350,y:150,r:40,attr:{"stroke":"rgba(0, 255, 255, .45)","stroke-width":150},animate:Raphael.animation({cx:800},7000,"<>")},
     ]
 
