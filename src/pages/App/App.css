@@ -22,14 +22,14 @@ html {
 }
 
 .header {
-  color: #ae5a41;
+  color: rgba(20, 50, 250, .95);
   font-size: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Helvetica;
-  margin-top: 50px;
-  margin-bottom: -25px;
+  font-family: Arial;
+  margin-top: 150px;
+  margin-bottom: -100px;
   width: 100vw;
   z-index: 100;
 }
