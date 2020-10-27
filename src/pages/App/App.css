@@ -4,13 +4,13 @@ html {
 
 @keyframes pulse {
   0% {
-    background-color: #001f3f63;
+    background-color: rgb(242, 13, 0, .25);
   }
   50% {
-    background-color: #80545267;
+    background-color: rgb(2, 213, 0, .25);
   }
   100% {
-    background-color: #001f3f63;
+    background-color: rgb(242, 13, 0, .25);
   }
 }
 
