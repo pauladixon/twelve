@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 
-const {Raphael,Paper,Set,Circle,Ellipse,Image,Rect,Text,Path,Line} = require('react-raphael');
+const {Raphael,Paper,Set,Circle} = require('react-raphael');
  
 
 class App extends React.Component {
@@ -40,7 +40,7 @@ class App extends React.Component {
   render() {
 
     var data = [
-      {x:150,y:100,r:40,attr:{"stroke":"rgba(255, 255, 255, .15)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
+      {x:150,y:100,r:40,attr:{"stroke":"rgba(0, 0, 0, .15)","stroke-width":100},animate:Raphael.animation({cx:300},3000,"<>")},
       {x:600,y:300,r:60,attr:{"stroke":"rgba(255, 255, 255, .65)","stroke-width":150},animate:Raphael.animation({cx:200},6000,"<>")},
       {x:1350,y:650,r:30,attr:{"stroke":"rgba(255, 255, 255, .45)","stroke-width":100},animate:Raphael.animation({cx:800},9000,"<>")},
       {x:300,y:500,r:50,attr:{"stroke":"rgba(255, 255, 255, .25)","stroke-width":100},animate:Raphael.animation({cx:700},2000,"<>")},
