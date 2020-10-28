@@ -27,7 +27,7 @@ class App extends React.Component {
       ctx.arc(250, 250, 0, angle + arc, angle, true)
       ctx.fill()
       ctx.save()
-      ctx.fillStyle = "rgba(0, 250, 250, .85)"
+      ctx.fillStyle = "rgba(10, 50, 20, .45)"
       ctx.translate(250 + Math.cos(angle + arc / 2) * numRadius,
           250 + Math.sin(angle + arc / 2) * numRadius)
       ctx.rotate(angle + arc / 2 + Math.PI / 2)
