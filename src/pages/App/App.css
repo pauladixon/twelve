@@ -22,7 +22,7 @@ html {
 }
 
 .header {
-  color: rgba(20, 50, 250, .95);
+  color: rgba(20, 50, 250, .25);
   font-size: 34px;
   display: flex;
   align-items: center;
