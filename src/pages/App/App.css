@@ -28,10 +28,13 @@ html {
   align-items: center;
   justify-content: center;
   font-family: monotype;
-  margin-top: 150px;
-  margin-bottom: -100px;
+  margin-top: 130px;
+  margin-bottom: -130px;
+  margin-left: -530px;
   width: 100vw;
   z-index: 100;
+  letter-spacing: .3em;
+  text-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.185);
 }
 
 .container {
