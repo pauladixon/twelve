@@ -15,7 +15,7 @@ html {
 }
 
 .app {
-  display: flex;
+  display: flex;s
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
