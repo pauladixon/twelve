@@ -12,7 +12,7 @@ class App extends React.Component {
     let startAngle = 0
     let arc = Math.PI / 6
     let ctx
-    let numRadius = 200
+    let numRadius = 50
 
     let canvas = document.getElementById("canvas")
 
